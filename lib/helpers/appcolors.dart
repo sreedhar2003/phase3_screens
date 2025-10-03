@@ -26,7 +26,9 @@ class AppColors {
   static const Color orangecontainer = Color.fromARGB(255, 250, 248, 184);
   static const Color lightorange = Color.fromRGBO(223, 136, 14, 0.14);
   static const Color yellow = Color.fromRGBO(253, 191, 0, 1);
+  static const Color lightyellow = Color.fromRGBO(240, 234, 191, 1);
   static const Color hba1ccard = Color.fromRGBO(197, 255, 206, 0.58);
   static const Color gradientcolor1 = Color.fromRGBO(1, 167, 73, 1);
   static const Color gradientcolor2 = Color.fromRGBO(1, 246, 120, 1);
+  static const Color buttoncolor = Color.fromRGBO(201, 201, 201, 1);
 }

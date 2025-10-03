@@ -22,12 +22,15 @@ import 'package:phase3_screens/screens/pcos_dashboard/controller/pcosdashboard_c
 import 'package:phase3_screens/screens/pcos_dashboard/screen/pcosdashboard_screen.dart';
 import 'package:phase3_screens/screens/progresssummary_dashboard/controller/progresssummary_controller.dart';
 import 'package:phase3_screens/screens/progresssummary_dashboard/screen/progresssummary_screen.dart';
+import 'package:phase3_screens/screens/skin_improver_dashboard/controller/skin_improver_controller.dart';
+import 'package:phase3_screens/screens/skin_improver_dashboard/screen/skin_improver_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
   runApp(
     MultiProvider(
       providers: [
+        ChangeNotifierProvider(create: (context) => SkinImproverController()),
         ChangeNotifierProvider(
           create: (context) => ProgresssummaryController(),
         ),
@@ -70,7 +73,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProgresssummaryScreen(),
+      home: SkinImproverScreen(),
+      //ProgresssummaryScreen(),
       //ConditionSelectionScreen(),
       //Profile360withoutconsent(),
       //Profile360Withconsent(),
